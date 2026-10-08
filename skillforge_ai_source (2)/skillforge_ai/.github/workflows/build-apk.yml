@@ -33,7 +33,7 @@ jobs:
       - name: Build release APK
         run: flutter build apk --release
         # To enable Gemini, add a repo secret GEMINI_API_KEY and use:
-        # run: flutter build apk --release --dart-define=GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
+        - run: flutter build apk --release --dart-define=GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
 
       - uses: actions/upload-artifact@v4
         with:
