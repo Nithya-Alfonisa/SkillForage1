@@ -21,8 +21,8 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Generate Android scaffolding
-        run: bash setup.sh
+     # - name: Generate Android scaffolding
+      #  run: bash setup.sh
 
       - name: Analyze
         run: flutter analyze --no-fatal-infos
